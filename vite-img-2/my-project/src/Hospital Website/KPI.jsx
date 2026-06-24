@@ -32,7 +32,7 @@ const RevenueCards = () => {
                         <MdOutlineCurrencyRupee />
                         2.2K</h5>
                     <p className="card-text received-text">
-                    9% collection <div>rate</div> </p>
+                    9% collection <span>rate</span> </p>
             </div>
             <div className="card-box">
             <div className="card-Header">
