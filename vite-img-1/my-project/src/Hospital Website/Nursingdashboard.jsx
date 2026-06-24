@@ -1,0 +1,12 @@
+const Nursingdashboard = () => {
+  return (
+    <section className='hero-main'>
+        <div className='main-data'>
+           <h1 className='hero-heading'>Laboratory Dashboard</h1>
+           <p className='hero-sub'>test queue, sample processing &amp;results management</p>
+        </div>
+    </section>
+  )
+}
+
+export default Nursingdashboard;
