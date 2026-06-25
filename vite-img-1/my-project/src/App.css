@@ -679,34 +679,11 @@ padding-top: 24px;
 padding-left: 24px;
 padding-right: 24px;
 }
-.test-queue{
-width: 101;
-height: 28;
-angle: 0 deg;
-opacity: 1;
-top: 0.8px;
-font-family: "Google Sans", sans-serif !important;
-font-weight: 600;
-font-style: Semibold;
-font-size: 20px;
-leading-trim: NONE;
-line-height: 28px;
-letter-spacing: 0px;
-color: #0F172B;
-}
-.fw-medium{
- width: 155.58750915527344;
-height: 68.80000305175781;
-angle: 0 deg;
-opacity: 1;
-border-bottom-width: 0.8px;
-left: 106.89px;
-border-bottom: 0.8px solid #F1F5F9
-}
+
 .patients-main {
   display: flex;
   flex-direction: column;
-  width: 1222.4px;
+  width: 2000.4px;
   height: 191.2px;
   color: #ffffff;
   border-radius: 16.4px;
