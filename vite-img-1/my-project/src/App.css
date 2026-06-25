@@ -76,7 +76,203 @@ opacity: 1;
 border-bottom-width: 0.8px;
 padding-right: 16px;
 padding-left: 16px;
+}
+.test-queue-section {
+width: 1222.4000244140625;
+height: 417.6000061035156;
+border-radius: 16.4px;
+angle: 0 deg;
+opacity: 1;
+display:start flex;
+padding-top: 24.8px;
+padding-right: 24.8px;
+padding-bottom: 0.8px;
+padding-left: 24.8px;
+gap: 16px;
+border-width: 0.8px;
+background: #FFFFFF;
+border-top: 0.8px solid #E2E8F0;
+box-shadow: 0px 1px 2px -1px #0000001A;
+box-shadow: 0px 1px 3px 0px #0000001A;
+}
 
+.test-queue-section .card {
+width: 1172.800048828125;
+height: 324;
+angle: 0 deg;
+opacity: 1;
+}
+
+.test-queue {
+width: 101;
+height: 28;
+angle: 0 deg;
+opacity: 1;
+top: 0.8px;
+font-family: "Google Sans", sans-serif !important;;
+font-weight: 600;
+font-style: Semibold;
+font-size: 20px;
+leading-trim: NONE;
+line-height: 28px;
+letter-spacing: 0px;
+color: #0F172B;
+}
+
+.table {
+margin-bottom: 0;
+width: 1172.800048828125;
+height: 275.20001220703125;
+angle: 0 deg;
+opacity: 1;
+top: 48.4px;
+}
+.table thead {
+ width: 1172.800048828125;
+height: 48.400001525878906;
+angle: 0 deg;
+opacity: 1;
+border-bottom-width: 0.8px;
+background: #F8FAFC;
+border-bottom: 0.8px solid #E2E8F0;
+}
+.table thead th{
+width: 63;
+height: 24;
+angle: 0 deg;
+opacity: 1;
+top: 10.8px;
+left: 16px;
+font-family: "Google Sans", sans-serif !important;;
+font-weight: 600;
+font-style: Semibold;
+font-size: 16px;
+leading-trim: NONE;
+line-height: 24px;
+letter-spacing: 0px;
+color: #314158;
+}
+
+.table tbody td {
+width: 1172.800048828125;
+height: 275.20001220703125;
+angle: 0 deg;
+opacity: 1;
+top: 48.4px;
+}
+
+.fw-medium {
+width: 155.58750915527344;
+height: 68.80000305175781;
+angle: 0 deg;
+opacity: 1;
+left: 106.89px;
+border-bottom-width: 0.8px;
+border-bottom: 0.8px solid #F1F5F9;
+color: #0F172B;
+font-family: "Google Sans", sans-serif !important;
+font-weight: 400;
+font-style: Regular;
+font-size: 16px;
+leading-trim: NONE;
+line-height: 24px;
+letter-spacing: 0px;
+}
+
+.text-muted {
+width: 54;
+height: 24;
+angle: 0 deg;
+opacity: 1;
+top: 21.2px;
+left: 16px;
+font-family: Segoe UI;
+font-weight: 400;
+font-style: Regular;
+font-size: 16px;
+leading-trim: NONE;
+line-height: 24px;
+letter-spacing: 0px;
+color: #0F172B;
+}
+.badge {
+font-family:"Google Sans", sans-serif !important;;
+font-weight: 600;
+font-style: Semibold;
+font-size: 12px;
+leading-trim: NONE;
+line-height: 18px;
+letter-spacing: 0px;
+width: 40;
+height: 18;
+angle: 0 deg;
+opacity: 1;
+top: 3.8px;
+left: 10px;
+background: #1447E6;
+}
+
+.btn {
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-success {
+width: 125.26250457763672;
+height: 40;
+border-radius: 10px;
+angle: 0 deg;
+opacity: 1;
+top: 14.4px;
+left: 16px;
+background: #00C950 !important;
+border-color: #00C950 !important;
+color: #FFFFFF  !important;
+}
+
+.btn-success:hover {
+    background: #00C950  !important;
+    border-color: #00C950  !important;
+}
+
+.btn-primary {
+width: 148.6125030517578;
+height: 40;
+border-radius: 10px;
+angle: 0 deg;
+opacity: 1;
+top: 14.4px;
+left: 16px;
+background:#00A6F4 !important;
+border-color: #00A6F4 !important;
+}
+.btn-primary:hover {
+background: #00A6F4 !important;
+border-color: #00A6F4 !important;
+
+}
+.btn-light.border {
+width: 120.8499984741211;
+height: 40;
+border-radius: 10px;
+angle: 0 deg;
+opacity: 1;
+top: 14.4px;
+left: 16px;
+background: #F1F5F9 !important;
+border: 1px solid #d1d5db !important;
+color: #374151 !important;
+}
+
+.btn-light.border:hover {
+    background: #f3f4f6 !important;
+}
+
+.table tbody tr:hover {
+    background-color: #f8fafc;
 }
 .medicare-data {
   width: 97px;
@@ -172,7 +368,7 @@ padding-left: 16px;
 border-bottom: 0.8px solid #E2E8F0
 }
 .sidebar-footer {
-  width: 255.1999969482422;
+width: 255.1999969482422;
 height: 132.8000030517578;
 gap: 12px;
 angle: 0 deg;
@@ -215,19 +411,18 @@ opacity: 1;
 top: -1.2px;
 }
 .login-btn {
-  width: 223.2px;
-  height: 40px;
-  border-radius: 10px;
-  background: #F1F5F9;
-  padding-left: 73.2px;
-  padding-top: 12px;
-  width: 223.1999969482422;
- angle: 0 deg;
- opacity: 1;
-
+width: 223.2px;
+height: 40px;
+border-radius: 10px;
+background: #F1F5F9;
+padding-left: 73.2px;
+padding-top: 12px;
+width: 223.1999969482422;
+angle: 0 deg;
+opacity: 1;
 }
 .login-icon {
-  width: 16;
+width: 16;
 height: 16;
 angle: 0 deg;
 opacity: 1;
@@ -603,7 +798,7 @@ top: -1.2px;
 
 .test-queue-section {
 width: 1222.4000244140625;
-height: 417.6000061035156;
+height: 8.6000061035156;
 gap: 16px;
 angle: 0 deg;
 opacity: 1;
