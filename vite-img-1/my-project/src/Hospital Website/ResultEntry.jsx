@@ -1,4 +1,5 @@
-import { LuCircleCheckBig, LuUpload } from "react-icons/lu";
+import { LuCircleCheckBig} from "react-icons/lu";
+import {LuUpload} from "react-icons/lu";
 
 const ResultEntry = () => {
   return (
@@ -14,13 +15,13 @@ const ResultEntry = () => {
         <form className="results-entry-form">
           <div className="results-entry-row">
             <label>
-              <span>Test Order</span>
-              <input type="text" />
+              <div className="test">Test Order</div>
+              <input type="text" className="t1" />
             </label>
 
             <label>
-              <span>Completion Time</span>
-              <input type="text" />
+              <div className="test">Completion Time</div>
+              <input type="text" className="t2"/>
             </label>
           </div>
 
@@ -39,7 +40,7 @@ const ResultEntry = () => {
 
               <label>
                 <span>Unit</span>
-                <input type="text" placeholder="cells/uL" />
+                <input type="text" placeholder="cells/μ L" />
               </label>
 
               <label>
