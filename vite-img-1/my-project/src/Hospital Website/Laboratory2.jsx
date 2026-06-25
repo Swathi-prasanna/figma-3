@@ -1,4 +1,6 @@
-import { LuDownload, LuSend, LuCircleCheckBig } from "react-icons/lu";
+import { LuDownload} from "react-icons/lu";
+ import {LuCircleCheckBig } from "react-icons/lu";
+import { LuShare } from "react-icons/lu";
 
 const Laboratory2 = ({ order, onClose }) => {
   const currentOrder = order || {
@@ -10,7 +12,7 @@ const Laboratory2 = ({ order, onClose }) => {
     <div className="lab-report-overlay">
       <div className="lab-report-modal">
         <div className="lab-report-header">
-          <div className="lab">
+          <div>
             <h2>Laboratory Test Report</h2>
             <p>{currentOrder.orderid}</p>
           </div>
@@ -74,11 +76,11 @@ const Laboratory2 = ({ order, onClose }) => {
 
         <div className="lab2-actions">
           <button type="button" className="lab2-download-btn">
-            <LuDownload size={16} />
+            <LuDownload width="840" height="40" style={{ opacity: 1 }} padding-right="0px" gap="12px"/>
             Download PDF
           </button>
           <button type="button" className="lab2-share-btn">
-            <LuSend size={16} />
+            <LuShare width="372.4624938964844" height="40" border-radius="10px" style={{ opacity: 1 }}/>
             Share with Doctor
           </button>
           <button type="button" className="lab2-close-btn" onClick={onClose}>
@@ -88,8 +90,8 @@ const Laboratory2 = ({ order, onClose }) => {
 
         <div className="lab2-status">
           <div className="lab2-status-title">
-            <LuCircleCheckBig size={18} />
-            <span>Report Status</span>
+            <LuCircleCheckBig width="20" height=" 20" style={{ opacity: 1 }}/>
+            <span >Report Status</span>
           </div>
           <p>Visible to ordering physician: Dr. James Wilson</p>
           <p>Available in patient record: PAT004</p>

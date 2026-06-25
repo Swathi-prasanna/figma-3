@@ -1,3 +1,4 @@
+
 const Startprocess2 = ({ order, onClose }) => {
   const currentOrder = order || {
     orderid: "LAB002",
@@ -9,7 +10,7 @@ const Startprocess2 = ({ order, onClose }) => {
       <div className="processing-step-two-modal">
         <div className="processing-header">
           <div>
-            <h2>Start Processing</h2>
+            <div className="Start">Start Processing</div>
             <p>
               {currentOrder.orderid} - {currentOrder.test}
             </p>
@@ -26,35 +27,32 @@ const Startprocess2 = ({ order, onClose }) => {
 
         <form className="processing-step-two-form">
           <label>
-            <span>Equipment Used *</span>
-            <input type="text" />
+            <div className="hero">Equipment Used *</div>
+            <input type="text" className="e1"/>
           </label>
 
           <label>
-            <span>Sample Condition</span>
-            <input type="text" />
+            <div className="hero1">Sample Condition</div>
+            <input type="text" className="e2"/>
           </label>
 
           <label>
-            <span>Processing Notes</span>
+            <div className="hero2">Processing Notes</div>
             <textarea
               rows="4"
-              placeholder="Any special observations during processing..."
+              className="text" placeholder="Any special observations during processing..."
             />
           </label>
 
           <div className="processing-checklist">
             <h3>Processing Checklist</h3>
             <label>
-              <input type="checkbox" />
               <span>Sample integrity verified</span>
             </label>
             <label>
-              <input type="checkbox" />
               <span>Equipment calibrated</span>
             </label>
             <label>
-              <input type="checkbox" />
               <span>Quality control performed</span>
             </label>
           </div>
