@@ -1,3 +1,5 @@
+import Icon from "./Icon.png";
+import Icon1 from "./Icon1.png"
 const Enterresult = ({ order, onClose }) => {
   const currentOrder = order || {
     orderid: "LAB001",
@@ -49,11 +51,11 @@ const Enterresult = ({ order, onClose }) => {
           <div className="enter-result-row">
             <label>
               <span width="97" height="24" angle="0 deg" opacity="1"  top= "-1.2px">Result Value *</span>
-              <input type="text"  class="text1" placeholder="Enter result" />
+              <input type="text"  className="text1" placeholder="Enter result" />
             </label>
             <label>
               <span width="269.3374938964844" height="24" angle=" 0 deg" opacity="1">Unit</span>
-              <input type="text"  class="text2" placeholder="mg/dL, mmol/L, etc." />
+              <input type="text"  className="text2" placeholder="mg/dL, mmol/L, etc." />
             </label>
             <label className="enter-result-check">
               <span width="108.30000305175781" height= "20" angle= "0 deg" opacity=" 1">Flag as abnormal</span>
@@ -63,7 +65,7 @@ const Enterresult = ({ order, onClose }) => {
           <div className="enter-result-row two-column">
             <label>
               <span>Technician ID *</span>
-              <input type="text" class="value1" defaultValue="LAB001 - Dr. Michael Lee" />
+              <input type="text" className="value1" defaultValue="LAB001 - Dr. Michael Lee" />
             </label>
             <label>
               <span>Completion Time *</span>
@@ -73,7 +75,7 @@ const Enterresult = ({ order, onClose }) => {
           </div>
 
           <label className="enter-result-textarea">
-            <span>Interpretation & Comments</span>
+            <span width="196" height="24"angle="0 deg" opacity="1"top= "-1.2px" >Interpretation & Comments</span>
             <textarea
               rows="4"
               placeholder="Clinical interpretation, technical notes, recommendations..."
@@ -81,21 +83,23 @@ const Enterresult = ({ order, onClose }) => {
           </label>
 
           <div className="critical-alert">
-            <div className="critical-alert-title">Critical Values Alert</div>
+            <div className="critical-alert-title"><div className="title"><img src={Icon}
+  alt="Icon"  width={20} height={20} style={{ opacity: 1 }}  ></img>
+  Critical Values Alert</div></div>
             <p>Critical values detected - notify physician immediately</p>
-            <label>
-              <input type="checkbox" />
-              <span>Results reviewed and verified</span>
-            </label>
+              <div className="Result">Results reviewed and verified</div>
           </div>
 
           <div className="enter-result-actions">
+            <button type="submit" className="btn-success1" >
+             <div className="color"><img src={Icon1} alt="Icon1" width={16} height={16} style={{ opacity: 1,
+    transform: "rotate(0deg)"
+  }}></img>Save Results</div>
+            </button>
             <button type="button" className="btn btn-light" onClick={onClose}>
               Cancel
             </button>
-            <button type="submit" className="btn btn-success">
-              Save Results
-            </button>
+            
           </div>
         </form>
       </div>

@@ -10,7 +10,7 @@ const Laboratory2 = ({ order, onClose }) => {
     <div className="lab-report-overlay">
       <div className="lab-report-modal">
         <div className="lab-report-header">
-          <div>
+          <div className="lab">
             <h2>Laboratory Test Report</h2>
             <p>{currentOrder.orderid}</p>
           </div>

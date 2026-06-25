@@ -59,28 +59,28 @@ const StartProcessing = ({ order, onClose }) => {
         <form className="processing-form">
           <label>
             <span>Sample ID *</span>
-            <input type="text" defaultValue={currentOrder.orderid} />
+            <input type="text" className="id" defaultValue={currentOrder.orderid} />
           </label>
 
-          <div className="processing-row">
+          <div className="processing-row" >
             <label>
-              <span>Processing Started By *</span>
-              <input type="text" defaultValue="Lab Tech - Dr. Michael Lee" />
+              <div className="Process">Processing Started By *</div>
+              <input type="text" className="p1" defaultValue="Lab Tech - Dr. Michael Lee" />
             </label>
             <label>
-              <span>Processing Start Time *</span>
-              <input type="text" />
+              <div className="time">Processing Start Time *</div>
+              <input type="text" className="p2" />
             </label>
-          </div>
+          </div>  
 
           <label>
-            <span>Equipment Used *</span>
-            <input type="text" />
+            <div className="equipment">Equipment Used *</div>
+            <input type="text"  className="p3"/>
           </label>
 
           <label>
-            <span>Sample Condition</span>
-            <input type="text" />
+            <div className="sample">Sample Condition</div>
+            <input type="text"  className="p4"/>
           </label>
 
           <div className="processing-actions">
