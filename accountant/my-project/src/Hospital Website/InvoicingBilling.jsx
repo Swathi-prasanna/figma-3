@@ -185,23 +185,23 @@ return(
                 <h3>Quick Services</h3>
                 <div className="service-item">
                     <span>General Consultation</span>
-                    <span>500</span>
+                    <span>₹500</span>
                 </div>
                 <div className="service-item">
                     <span>Specialist Consultation</span>
-                    <span>800</span>
+                    <span>₹800</span>
                 </div>
                 <div className="service-item">
                     <span>ECG</span>
-                    <span>400</span>
+                    <span>₹400</span>
                 </div>
                 <div className="service-item">
                     <span>X-Ray</span>
-                    <span>800</span>
+                    <span>₹800</span>
                 </div>
                 <div className="service-item">
                     <span>CBC</span>
-                    <span>300</span>
+                    <span>₹300</span>
                 </div>
             </div>
             <div className="side-card">

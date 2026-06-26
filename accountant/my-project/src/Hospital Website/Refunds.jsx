@@ -1,161 +1,182 @@
-import { FiAlertTriangle, FiCheckCircle, FiClock, FiFileText } from "react-icons/fi";
+import {FiClock} from "react-icons/fi";
+import {FiCheckCircle} from "react-icons/fi";
+import {FiFileText} from "react-icons/fi";
+import { FiAlertTriangle } from "react-icons/fi";
 
-const refundStats = [
-  {
-    label: "Pending Approval",
-    count: "1",
-    total: "₹500 total",
-    type: "pending",
-    icon: <FiClock />,
-  },
-  {
-    label: "Approved",
-    count: "1",
-    total: "₹1,200 total",
-    type: "approved",
-    icon: <FiCheckCircle />,
-  },
-  {
-    label: "Rejected",
-    count: "1",
-    total: "₹300 total",
-    type: "rejected",
-    icon: <FiAlertTriangle />,
-  },
-];
-
-const refundRequests = [
-  {
-    refundId: "REF001",
-    billId: "BILL001",
-    patient: "John Anderson",
-    amount: "₹500",
-    reason: "Service not provided",
-    requestedBy: "Maria Rodriguez",
-    date: "2026-01-03",
-    status: "pending",
-  },
-  {
-    refundId: "REF002",
-    billId: "BILL005",
-    patient: "Sarah Williams",
-    amount: "₹1,200",
-    reason: "Duplicate payment",
-    requestedBy: "Front Desk",
-    date: "2026-01-02",
-    status: "approved",
-  },
-  {
-    refundId: "REF003",
-    billId: "BILL008",
-    patient: "Michael Chen",
-    amount: "₹300",
-    reason: "Discount adjustment",
-    requestedBy: "Reception",
-    date: "2026-01-01",
-    status: "rejected",
-  },
-];
 
 const Refunds = () => {
   return (
     <div className="refunds-page">
-      <div className="refunds-header">
-        <div>
-          <h1>Refunds & Adjustments</h1>
-          <p>Manage refund requests and approvals</p>
-        </div>
-        <button className="new-refund-btn" type="button">
-          <FiFileText />
-          New Refund Request
-        </button>
-      </div>
+    
+      <div className="refunds-container">
 
-      <div className="refund-stats-grid">
-        {refundStats.map((item) => (
-          <div className="refund-stat-card" key={item.label}>
-            <div className={`refund-stat-title ${item.type}`}>
-              {item.icon}
-              <span>{item.label}</span>
+        <div className="refund-header">
+          <div className="header-left">
+            <div className="heading">Refunds & Adjustments</div>
+
+            <div className="sub-heading">
+              Manage refund requests and approvals
             </div>
-            <strong>{item.count}</strong>
-            <p className={item.type}>{item.total}</p>
           </div>
-        ))}
+
+          <div className="header-right">
+            <button className="refund-btn">
+              <FiFileText  />
+              <span>New Refund Request</span>
+            </button>
+          </div>
+        </div>
+        <div className="refund-cards">
+          <div className="refund-card">
+            <div className="card-top">
+              <div className="icon orange">
+                <FiClock width={20} height={20} opacity={1} />
+              </div>
+
+              <div className="title">Pending Approval</div>
+            </div>
+
+            <div className="count">1</div>
+
+            <div className="amount orange-text">₹500 total</div>
+          </div>
+
+          <div className="refund-card">
+            <div className="card-top">
+              <div className="icon green">
+                <FiCheckCircle width={20} height={20} opacity={1}/>
+              </div>
+
+              <div className="title">Approved</div>
+            </div>
+
+            <div className="count">1</div>
+
+            <div className="amount green-text">₹1,200 total</div>
+          </div>
+
+          <div className="refund-card">
+            <div className="card-top">
+              <div className="icon red">
+                <FiAlertTriangle width={20} height={20} opacity={1} />
+              </div>
+
+              <div className="title">Rejected</div>
+            </div>
+
+            <div className="count">1</div>
+
+            <div className="amount">₹300 total</div>
+          </div>
+        </div>
       </div>
 
-      <section className="refund-requests-card">
-        <h2>Refund Requests</h2>
-        <div className="refund-table-wrap">
-          <table className="refund-table">
-            <thead>
-              <tr>
-                <th>Refund ID</th>
-                <th>Bill ID</th>
-                <th>Patient</th>
-                <th>Amount</th>
-                <th>Reason</th>
-                <th>Requested By</th>
-                <th>Date</th>
-                <th>Status</th>
-                <th>Actions</th>
-              </tr>
-            </thead>
-            <tbody>
-              {refundRequests.map((request) => (
-                <tr key={request.refundId}>
-                  <td>
-                    <span className="refund-id-badge">{request.refundId}</span>
-                  </td>
-                  <td>
-                    <span className="refund-bill-badge">{request.billId}</span>
-                  </td>
-                  <td>{request.patient}</td>
-                  <td className="refund-amount">{request.amount}</td>
-                  <td>{request.reason}</td>
-                  <td>{request.requestedBy}</td>
-                  <td>{request.date}</td>
-                  <td>
-                    <span className={`refund-status ${request.status}`}>
-                      {request.status}
-                    </span>
-                  </td>
-                  <td>
-                    {request.status === "pending" ? (
-                      <div className="refund-action-group">
-                        <button className="approve-refund-btn" type="button">
-                          Approve
-                        </button>
-                        <button className="reject-refund-btn" type="button">
-                          Reject
-                        </button>
-                      </div>
-                    ) : (
-                      <button className="refund-details-btn" type="button">
-                        View Details
-                      </button>
-                    )}
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      </section>
+      <div className="refund-table-container">
+        <div className="table-title">Refund Requests</div>
 
-      <section className="refund-workflow-card">
+        <table className="refund-table">
+          <thead>
+            <tr>
+              <th>Refund ID</th>
+              <th>Bill ID</th>
+              <th>Patient</th>
+              <th>Amount</th>
+              <th>Reason</th>
+              <th>Requested By</th>
+              <th>Date</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>
+                <span className="badge">REF001</span>
+              </td>
+              <td>
+                <span className="bill-badge">BILL001</span>
+              </td>
+              <td>John Anderson</td>
+              <td className="amount-red">₹500</td>
+              <td>Service not provided</td>
+              <td>Maria Rodriguez</td>
+              <td>2026-01-03</td>
+              <td>
+                <span className="status pending">Pending</span>
+              </td>
+              <td>
+                <button className="approve-btn">Approve</button>
+                <button className="reject-btn">Reject</button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <span className="badge">REF002</span>
+              </td>
+              <td>
+                <span className="bill-badge">BILL005</span>
+              </td>
+              <td>Sarah Williams</td>
+              <td className="amount-red">₹1,200</td>
+              <td>Duplicate payment</td>
+              <td>Front Desk</td>
+              <td>2026-01-02</td>
+              <td>
+                <span className="status approved">Approved</span>
+              </td>
+              <td>
+                <button className="view-btn">View Details</button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <span className="badge">REF003</span>
+              </td>
+              <td>
+                <span className="bill-badge">BILL008</span>
+              </td>
+              <td>Michael Chen</td>
+              <td className="amount-red">₹300</td>
+              <td>Discount adjustment</td>
+              <td>Reception</td>
+              <td>2026-01-01</td>
+              <td>
+                <span className="status rejected">Rejected</span>
+              </td>
+              <td>
+                <button className="view-btn">View Details</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    
+
+    <div className="workflow-container">
+
+      <div className="workflow-header">
+        <FiAlertTriangle className="workflow-icon" />
+
         <div className="workflow-title">
-          <FiAlertTriangle />
-          <h2>Refund Approval Workflow</h2>
+          Refund Approval Workflow
         </div>
+      </div>
+
+      <div className="workflow-content">
         <ul>
           <li>All refunds require Finance Manager approval</li>
           <li>Refunds above ₹5,000 require Admin sign-off</li>
           <li>Approved refunds are processed within 3-5 business days</li>
           <li>All refund actions are logged in the audit trail</li>
         </ul>
-      </section>
+      </div>
+
     </div>
+    </div>
+  
   );
 };
 
