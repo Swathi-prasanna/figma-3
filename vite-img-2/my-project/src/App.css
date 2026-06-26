@@ -479,16 +479,19 @@ body {
   cursor:pointer;
 }
 .modal-bii{
-  position:fixed;
-  z-index:999;
-  background: rbba(0,0,0,0.45);
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
+  width: 384;
+height: 314;
+border-radius: 10px;
+padding-top: 24px;
+padding-right: 24px;
+padding-left: 24px;
+gap: 16px;
+angle: 0 deg;
+opacity: 1;
+background: #FFFFFF;
+box-shadow: 0px 4px 6px -4px #0000001A;
+box-shadow: 0px 10px 15px -3px #0000001A;
+
 }
 .bill-modal{
   width:400px;
@@ -541,31 +544,69 @@ body {
 }
 
 .invoice-page{
-  padding:20px;
-  background:#f5f7fb;
-  min-height:100vh;
+width: 1270.4000244140625;
+height: 1216;
+padding-top: 24px;
+padding-right: 24px;
+padding-left: 24px;
+angle: 0 deg;
+opacity: 1;
+
 }
 .header{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  margin-bottom:25px;
+width: 1222.4000244140625;
+height: 61.60000228881836;
+padding-right: 0px;
+angle: 0 deg;
+opacity: 1;
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:25px;
 }
 .header h1{
-  font-size:36px;
-  color:#1f2937;
+width: 249;
+height: 36;
+angle: 0 deg;
+opacity: 1;
+top: 0.4px;
+font-family: "Google Sans", Arial, sans-serif;
+font-weight: 700;
+font-style: Bold;
+font-size: 30px;
+leading-trim: NONE;
+line-height: 36px;
+letter-spacing: -0.75px;
+color: #0F172B;
+
 }
 .header p{
-  color:#64748b;
-  margin:5px;
+width: 335;
+height: 26;
+angle: 0 deg;
+opacity: 1;
+top: -0.4px;
+font-family: "Google Sans", Arial, sans-serif;
+font-weight: 400;
+font-style: Regular;
+font-size: 16px;
+leading-trim: NONE;
+line-height: 25.6px;
+letter-spacing: 0px;
+color: #45556C;
 }
 .new-invoice-btn{
-  background: #0ea5e9;
-  color:white;
-  border:none;
-  padding:12px 22px;
-  border-radius:8px;
-  cursor:pointer;
+width: 145.02500915527344;
+height: 40;
+border-radius: 10px;
+angle: 0 deg;
+opacity: 1;
+background: #00A6F4;
+color: #FFFFFF;
+border:none;
+padding:12px 22px;
+border-radius:8px;
+cursor:pointer;
 }
 .invoice-card,side-card{
   background: white;
@@ -620,6 +661,15 @@ body {
   align-items:center;
   margin-top:25px;
   margin-bottom:15px;
+font-family: "Google Sans", Arial, sans-serif;
+font-weight: 600;
+font-style: Semibold;
+font-size: 18px;
+leading-trim: NONE;
+line-height: 25.2px;
+letter-spacing: 0px;
+color: #0F172B;
+
 }
 .add-btn{
   background:#e5e7eb;
@@ -629,9 +679,16 @@ body {
   cursor:pointer;
 }
 .table-wrapper{
-  border:1px solid #e5e7eb;
-  border-radius:10px;
-  overflow:hidden;
+border:1px solid #e5e7eb;
+border-radius:10px;
+overflow:hidden;
+width: 755.7250366210938;
+height: 48.400001525878906;
+angle: 0 deg;
+opacity: 1;
+border-bottom-width: 0.8px;
+background: #F8FAFC;
+border-bottom: 0.8px solid #E2E8F0
 }
 .table{
   width:100%;
@@ -746,12 +803,16 @@ tbody input{
   z-index:1000;
 }
 .model-content{
-  width:450px;
-  background:white;
-  border-radius:10px;
-  padding:20px;
-  position: relative;
-
+width: 806.9249877929688;
+height: 827.6000366210938;
+border-radius: 16.4px;
+angle: 0 deg;
+opacity: 1;
+border-width: 0.8px;
+border-top: 0.8px solid #E2E8F0;
+background: #FFFFFF;
+box-shadow: 0px 1px 2px -1px #0000001A;
+box-shadow: 0px 1px 3px 0px #0000001A;
 }
 .close-btn{
   position:absolute;
@@ -761,46 +822,111 @@ tbody input{
   cursor:pointer;
 }
 .form-group{
-  margin-bottom: 12px;
+width: 370.6625061035156;
+height: 71.5999984741211;
+gap: 6px;
+angle: 0 deg;
+opacity: 1;
 }
 .form-group label{
-  display:block;
-  margin-bottom: 5px;
+width: 213;
+height: 24;
+angle: 0 deg;
+opacity: 1;
+top: -1.2px;
+font-family: "Google Sans", Arial, sans-serif;
+font-weight: 400;
+font-style: Regular;
+font-size: 16px;
+leading-trim: NONE;
+line-height: 24px;
+letter-spacing: 0px;
+color: #314158;
 }
 .form-group input{
   display:block;
   margin-bottom:5px;
 }
 .form-group input{
-  width:100%;
-  padding:8px;
-  border:1px solid #d1d5db;
-  border-radius:5px;
+width: 370.6625061035156;
+height: 41.60000228881836;
+border-radius: 10px;
+padding-top: 8px;
+padding-right: 12px;
+padding-bottom: 8px;
+padding-left: 12px;
+angle: 0 deg;
+opacity: 1;
+border-width: 0.8px;
+background: #FFFFFF;
+border-top: 0.8px solid #CAD5E2
 }
 .btn-group{
   display:flex;
   gap:10px;
   margin-top:20px;
+
 }
 .generate-btn{
-  background: #0ea5e9;
-  color:white;
-  border:none;
-  padding:10px 15px;
-  border-radius:5px;
+width: 119;
+height: 24;
+angle: 0 deg;
+opacity: 1;
+font-family: "Google Sans", Arial, sans-serif;
+font-weight: 400;
+font-style: Regular;
+font-size: 16px;
+leading-trim: NONE;
+line-height: 24px;
+letter-spacing: 0px;
+text-align: center;
+border:none;
+padding:10px 15px;
+border-radius:5px;
 }
-.draft-btn,.clear-btn{
-  background: #e5e7eb;
-  border:none;
-  padding:10px 15px;
-  border-radius:5px;
+.draft-btn{
+width: 126.95000457763672;
+height: 40;
+border-radius: 10px;
+padding-top: 8px;
+padding-right: 16px;
+padding-bottom: 8px;
+padding-left: 16px;
+gap: 8px;
+angle: 0 deg;
+opacity: 1;
+background: #F1F5F9;
+color: #314158;
+font-family: "Google Sans", Arial, sans-serif;
+font-weight: 400;
+font-style: Regular;
+font-size: 16px;
+leading-trim: NONE;
+line-height: 24px;
+letter-spacing: 0px;
+text-align: center;
+}.clear-btn{
+  width: 36;
+height: 24;
+angle: 0 deg;
+opacity: 1;
+font-family: "Google Sans", Arial, sans-serif;
+font-weight: 400;
+font-style: Regular;
+font-size: 16px;
+leading-trim: NONE;
+line-height: 24px;
+letter-spacing: 0px;
+text-align: center;
+color: #314158;
 }
 
 .accounts-container{
   padding:25px;
   background: #f5f7fb;
   min-height: 100vh;
-  font-family:Arial,sans-serif;
+  font-family:"Google Sans", sans-serif !important;
+
 }
 .top-header{
   display: flex;
@@ -811,7 +937,7 @@ tbody input{
   padding:25px;
   background: #f5f7fb;
   min-height: 100vh;
-  font-family:Arial,sans-serif;
+  font-family:"Google Sans", Arial, sans-serif;
 }
 .top-header{
   display:flex;
@@ -1506,11 +1632,22 @@ body {
 }
 
 .invoice-sidebar {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+width: 391.4750061035156;
+height: 322.8000183105469;
+border-radius: 16.4px;
+padding-top: 24.8px;
+padding-right: 24.8px;
+padding-bottom: 0.8px;
+padding-left: 24.8px;
+gap: 16px;
+angle: 0 deg;
+opacity: 1;
+border-width: 0.8px;
+background: #FFFFFF;
+border-top: 0.8px solid #E2E8F0;
+box-shadow: 0px 1px 2px -1px #0000001A;
+box-shadow: 0px 1px 3px 0px #0000001A;
 }
-
 .invoice-card,
 .side-card,
 .table-card,

@@ -1,4 +1,5 @@
 import React,{useState} from "react";
+import { FaRegFileLines } from "react-icons/fa6";
 
 function InvoicingBilling(){
     const[items, setitems]=useState([{
@@ -26,7 +27,7 @@ return(
             </div>
         
         <button className="new-invoice-btn" type="button" onClick={()=>setShowModal(true)}>
-            New Invoice
+           <FaRegFileLines size={16}/> New Invoice
         </button>
       </div>
       {showModal &&(
