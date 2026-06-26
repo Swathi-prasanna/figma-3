@@ -495,12 +495,14 @@ letter-spacing: 0px;
 color: #45556c;
 }
 .beds-inner-data1 {
-angle: 0 deg;
-opacity: 1;
-color: #0f172b;
-width: 238px;
-height: 24px;
-top: -1.2px;
+color: #45556c;
+  width: 238px;
+  height: 24px;
+  top: -1.2px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0px;
 }
 .beds-inner-data2 {
   color: #45556c;
@@ -679,17 +681,18 @@ border-width: 0.8px;
 .beds-card {
 width: 287.6000061035156;
 height: 105.5999984741211;
-border-radius: 16.4px;
+gap: 8px;
 angle: 0 deg;
 opacity: 1;
-gap: 8px;
 padding-top: 24.8px;
 padding-right: 24.8px;
 padding-bottom: 0.8px;
 padding-left: 24.8px;
+left: 311.6px;
+border-radius: 16.4px;
 border-width: 0.8px;
 background: #FFFFFF;
-border-top: 0.8px solid #E2E8F0;
+color: 0.8px solid #E2E8F0;
 box-shadow: 0px 1px 2px -1px #0000001A;
 box-shadow: 0px 1px 3px 0px #0000001A;
 }
@@ -1354,7 +1357,7 @@ angle: 0 deg;
 opacity: 1;
 }
 .sample-page-title h1 {
-width: 1500;
+width: 3000;
 angle: 0 deg;
 opacity: 1;
 top: 0.4px;
