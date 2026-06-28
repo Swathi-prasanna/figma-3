@@ -14,7 +14,7 @@ const FinanceDashboard = () => {
         <div className="header-right">
           <input type="text" className="search-box" placeholder=" "/>
           <button className="export-btn" type="button" onClick={() => setShowReportPopup(true)}>
-              <span className="icon"></span><GoDownload color="white" />Export Report
+              <span className="icon"></span><GoDownload color="white" size={60}/>Export Report
           </button>
         </div>
         

@@ -19,7 +19,7 @@ const RevenueCards = () => {
                 <h5 className="card-value">
                     <MdOutlineCurrencyRupee />24.8k
                     </h5>
-                <p className="card-text revenue-text">
+                <p className="green" color="#00A63E">
                    <MdTrendingUp /> +12% vs yesterday</p>
             </div>
             <div  className="card-box">
@@ -32,7 +32,7 @@ const RevenueCards = () => {
                         <MdOutlineCurrencyRupee />
                         2.2K</h5>
                     <p className="card-text received-text">
-                    9% collection <span>rate</span> </p>
+                    9% collection <br />rate </p>
             </div>
             <div className="card-box">
             <div className="card-Header">
@@ -41,7 +41,8 @@ const RevenueCards = () => {
             </div>
             <h2 className="card-value"><MdOutlineCurrencyRupee />22.6K</h2>
             <p className="card-text pending-text">
-                2 unpaid bills
+
+            <span className="red" color= "#F54900">2 unpaid bills</span>
             </p>
             </div>
             <div className="card-box">

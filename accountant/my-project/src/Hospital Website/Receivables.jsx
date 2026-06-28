@@ -1,17 +1,51 @@
 import React from "react";
+import { CiFilter } from "react-icons/ci";
+import { LuDownload } from "react-icons/lu";
+import { CiClock2 } from "react-icons/ci";
+import { GrAlert } from "react-icons/gr";
+import { CiCircleCheck } from "react-icons/ci";
+
 
 const agingData = [
-  { label: "0-30 days", amount: "₹125K", invoices: "12 invoices" },
-  { label: "31-60 days", amount: "₹87K", invoices: "8 invoices" },
-  { label: "61-90 days", amount: "₹45K", invoices: "5 invoices" },
-  { label: "90+ days", amount: "₹23K", invoices: "3 invoices" },
+  { 
+    label: "0-30 days", 
+    amount: "₹125K", 
+    invoices: "12 invoices" 
+  },
+  { 
+    label: "31-60 days",
+     amount: "₹87K", 
+     invoices: "8 invoices" 
+    },
+  { 
+    label: "61-90 days", 
+    amount: "₹45K", 
+    invoices: "5 invoices"
+   },
+  { 
+    label: "90+ days", 
+    amount: "₹23K", 
+    invoices: "3 invoices"
+   },
 ];
 
 const chartData = [
-  { label: "0-30 days", value: 125000 },
-  { label: "31-60 days", value: 87000 },
-  { label: "61-90 days", value: 45000 },
-  { label: "90+ days", value: 23000 },
+  { 
+    label: "0-30 days", 
+    value: 125000 
+  },
+  {
+     label: "31-60 days",
+     value: 87000
+     },
+  { 
+    label: "61-90 days", 
+    value: 45000 
+  },
+  { 
+    label: "90+ days", 
+    value: 23000 
+  },
 ];
 
 const bills = [
@@ -41,21 +75,37 @@ const claims = [
     title: "Pending Approval",
     count: "8 Claims",
     amount: "₹245,000",
-    icon: "○",
+    icon: <CiClock2 style={{
+      width: 16.67,
+      height: 16.67,
+      opacity: 1,
+      border: "#155DFC"
+    }}/>
   },
   {
     type: "approved",
     title: "Approved",
     count: "15 Claims",
     amount: "₹687,000",
-    icon: "✓",
+    icon:<CiCircleCheck style={{
+      width: 16.67,
+      height: 16.67,
+      opacity: 1,
+      color: "#00A63E",
+    }}
+/>
   },
   {
     type: "rejected",
     title: "Rejected",
     count: "2 Claims",
     amount: "₹45,000",
-    icon: "△",
+    icon: <GrAlert  style={{
+      width: 16,
+      height: 16,
+      opacity: 1,
+      color: "#E7000B",
+    }}/>
   },
 ];
 
@@ -70,11 +120,11 @@ const Receivables = () => {
 
         <div className="receivables-actions">
           <button className="filter-btn" type="button">
-            <span aria-hidden="true">⌄</span>
+            <span aria-hidden="true"><CiFilter /></span>
             Filter
           </button>
           <button className="export-btn aging-export-btn" type="button">
-            <span aria-hidden="true">⇩</span>
+            <span aria-hidden="true1"><LuDownload /></span>
             Export Aging Report
           </button>
         </div>
@@ -134,7 +184,7 @@ const Receivables = () => {
               {bills.map((bill) => (
                 <tr key={bill.invoice}>
                   <td>
-                    <span className="bill-badge">{bill.invoice}</span>
+                    <span className="bill-badge2">{bill.invoice}</span>
                   </td>
                   <td>{bill.patient}</td>
                   <td>{bill.date}</td>
@@ -187,7 +237,7 @@ const Receivables = () => {
           {claims.map((claim) => (
             <div className={`claim-box ${claim.type}`} key={claim.title}>
               <p>
-                <span aria-hidden="true">{claim.icon}</span>
+                <span aria-hidden="true2">{claim.icon}</span>
                 {claim.title}
               </p>
               <h2>{claim.count}</h2>

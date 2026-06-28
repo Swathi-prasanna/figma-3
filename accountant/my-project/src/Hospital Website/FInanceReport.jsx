@@ -1,14 +1,17 @@
 import { useState } from "react";
-import { FiBarChart2, FiDownload, FiFileText, FiTrendingUp } from "react-icons/fi";
+import {FiDownload, FiFileText, FiTrendingUp } from "react-icons/fi";
 import { LuClock3 } from "react-icons/lu";
 import { TbBuildingBank, TbReceiptTax } from "react-icons/tb";
 import DailyRevenu from "./DailyRevenu";
+import office from "./office.png";
+import Container from "./Container.png";
+import Gst from "./Gst.png";
 
 const reports = [
   {
     title: "Daily Revenue Report",
     description: "Daily collection summary",
-    icon: <FiBarChart2 />,
+    icon: <img src={Container} alt="Office" className="report-image" />,
     tone: "blue",
   },
   {
@@ -20,13 +23,13 @@ const reports = [
   {
     title: "GST/Tax Report",
     description: "Tax compliance report",
-    icon: <TbReceiptTax />,
+    icon: <img src={Gst} alt="Office" className="report-image" /> ,
     tone: "purple",
   },
   {
     title: "Department-wise Revenue",
     description: "Revenue by department",
-    icon: <TbBuildingBank />,
+    icon: <img src={office} alt="Office" className="report-image" />,
     tone: "orange",
   },
   {

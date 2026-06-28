@@ -92,16 +92,16 @@ const Refunds = () => {
           <tbody>
             <tr>
               <td>
-                <span className="badge">REF001</span>
+                <span className="refund-id-badge">REF001</span>
               </td>
               <td>
                 <span className="bill-badge">BILL001</span>
               </td>
-              <td>John Anderson</td>
+              <td>John <br />Anderson</td>
               <td className="amount-red">₹500</td>
-              <td>Service not provided</td>
-              <td>Maria Rodriguez</td>
-              <td>2026-01-03</td>
+              <td>Service not <br />provided</td>
+              <td>Maria <br />Rodriguez</td>
+              <td>2026-01<br/>-03</td>
               <td>
                 <span className="status pending">Pending</span>
               </td>
@@ -113,7 +113,7 @@ const Refunds = () => {
 
             <tr>
               <td>
-                <span className="badge">REF002</span>
+                <span className="refund-id-badge">REF002</span>
               </td>
               <td>
                 <span className="bill-badge">BILL005</span>
@@ -122,7 +122,7 @@ const Refunds = () => {
               <td className="amount-red">₹1,200</td>
               <td>Duplicate payment</td>
               <td>Front Desk</td>
-              <td>2026-01-02</td>
+              <td>2026-01<br/>-02</td>
               <td>
                 <span className="status approved">Approved</span>
               </td>
@@ -133,16 +133,16 @@ const Refunds = () => {
 
             <tr>
               <td>
-                <span className="badge">REF003</span>
+                <span className="refund-id-badge">REF003</span>
               </td>
               <td>
                 <span className="bill-badge">BILL008</span>
               </td>
               <td>Michael Chen</td>
               <td className="amount-red">₹300</td>
-              <td>Discount adjustment</td>
+              <td>Discount <br />adjustment</td>
               <td>Reception</td>
-              <td>2026-01-01</td>
+              <td>2026-01<br/>-01</td>
               <td>
                 <span className="status rejected">Rejected</span>
               </td>
