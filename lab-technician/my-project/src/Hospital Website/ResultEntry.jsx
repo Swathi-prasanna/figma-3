@@ -16,12 +16,12 @@ const ResultEntry = () => {
           <div className="results-entry-row">
             <label>
               <div className="test">Test Order</div>
-              <input type="text" className="t1" />
+              <input type="text"/>
             </label>
 
             <label>
               <div className="test">Completion Time</div>
-              <input type="text" className="t2"/>
+              <input type="text" />
             </label>
           </div>
 

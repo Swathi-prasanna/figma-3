@@ -13,7 +13,7 @@ const TestQueue=() =>{
             orderid:"LAB001",
             patient:"John Anderson",
             patientid:"PAT001",
-            test:"Complete Blood Count(CBC)",
+            test:"Complete Blood Count (CBC)",
             doctor:"Dr.James Wilson",
             priority:"routine",
             status:"processing",
@@ -36,7 +36,7 @@ const TestQueue=() =>{
             patient:"Emily Davis",
             patientid:"PAT004",
             test:"HbA1c",
-            doctor:"DR.James Wilson",
+            doctor:"Dr.James Wilson",
             priority:"routine",
             status:"completed",
             action:"View Report",
@@ -56,24 +56,24 @@ const TestQueue=() =>{
     ];
     return(
     <section className="test-queue-section">
-        <div className="container">
+        <div className="test-queue-container">
             <div className="card border-0 shadow-sm">
                 <div className="card-body">
                     <div className="test-queue">Test Queue</div>
-                    <div className="table-responsive">
-                        <table className="table align-middle">
+                    <div className="table-wrapper">
+                        <table className="table test-table align-middle">
                             <thead className="table-light">
                                 <tr>
                                     <th>Order ID</th>
                                     <th>Patient</th>
                                     <th>Test</th>
-                                    <th>Ordered BY</th>
+                                    <th>Ordered By</th>
                                     <th>Priority</th>
                                     <th>Status</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
-                            <tbody className="item">
+                            <tbody>
                                  {testData.map((item,index)=>(<tr key={index}>
                                     <td>{item.orderid}</td>
                                     <td>

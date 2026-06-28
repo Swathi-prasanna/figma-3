@@ -51,21 +51,21 @@ const Enterresult = ({ order, onClose }) => {
           <div className="enter-result-row">
             <label>
               <span width="97" height="24" angle="0 deg" opacity="1"  top= "-1.2px">Result Value *</span>
-              <input type="text"  className="text1" placeholder="Enter result" />
+              <input type="text"  placeholder="Enter result" />
             </label>
             <label>
               <span width="269.3374938964844" height="24" angle=" 0 deg" opacity="1">Unit</span>
-              <input type="text"  className="text2" placeholder="mg/dL, mmol/L, etc." />
+              <input type="text"  placeholder="mg/dL, mmol/L, etc." />
             </label>
             <label className="enter-result-check">
-              <span width="108.30000305175781" height= "20" angle= "0 deg" opacity=" 1">Flag as abnormal</span>
+              <span>Flag as abnormal</span>
             </label>
           </div>
 
           <div className="enter-result-row two-column">
             <label>
               <span>Technician ID *</span>
-              <input type="text" className="value1" defaultValue="LAB001 - Dr. Michael Lee" />
+              <input type="text" defaultValue="LAB001 - Dr. Michael Lee" />
             </label>
             <label>
               <span>Completion Time *</span>
@@ -75,7 +75,7 @@ const Enterresult = ({ order, onClose }) => {
           </div>
 
           <label className="enter-result-textarea">
-            <span width="196" height="24"angle="0 deg" opacity="1"top= "-1.2px" >Interpretation & Comments</span>
+            <span>Interpretation & Comments</span>
             <textarea
               rows="4"
               placeholder="Clinical interpretation, technical notes, recommendations..."
@@ -83,9 +83,10 @@ const Enterresult = ({ order, onClose }) => {
           </label>
 
           <div className="critical-alert">
-            <div className="critical-alert-title"><div className="title"><img src={Icon}
+            <div className="critical-alert-title">
+              <img src={Icon}
   alt="Icon"  width={20} height={20} style={{ opacity: 1 }}  ></img>
-  Critical Values Alert</div></div>
+  Critical Values Alert</div>
             <p>Critical values detected - notify physician immediately</p>
               <div className="Result">Results reviewed and verified</div>
           </div>
