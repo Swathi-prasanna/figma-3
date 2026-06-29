@@ -810,13 +810,17 @@ tbody input{
   z-index:1000;
 }
 .model-content{
-  position: relative;
-  width: 807px;
-  height: 828px;
-  background: #fff;
-  border-radius: 16px;
-  border: 1px solid #E2E8F0;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1);}
+width: 806.9249877929688;
+height: 827.6000366210938;
+border-radius: 16.4px;
+angle: 0 deg;
+opacity: 1;
+border-width: 0.8px;
+border-top: 0.8px solid #E2E8F0;
+background: #FFFFFF;
+box-shadow: 0px 1px 2px -1px #0000001A;
+box-shadow: 0px 1px 3px 0px #0000001A;
+}
 .modal-content{
    position: relative;
 }
