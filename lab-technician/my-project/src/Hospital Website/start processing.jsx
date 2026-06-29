@@ -65,22 +65,22 @@ const StartProcessing = ({ order, onClose }) => {
           <div className="processing-row" >
             <label>
               <div className="Process">Processing Started By *</div>
-              <input type="text" className="p1" defaultValue="Lab Tech - Dr. Michael Lee" />
+              <input type="text" defaultValue="Lab Tech - Dr. Michael Lee" />
             </label>
             <label>
               <div className="time">Processing Start Time *</div>
-              <input type="text" className="p2" />
+              <input type="text" />
             </label>
           </div>  
 
           <label>
             <div className="equipment">Equipment Used *</div>
-            <input type="text"  className="p3"/>
+            <input type="text"/>
           </label>
 
           <label>
             <div className="sample">Sample Condition</div>
-            <input type="text"  className="p4"/>
+            <input type="text"/>
           </label>
 
           <div className="processing-actions">

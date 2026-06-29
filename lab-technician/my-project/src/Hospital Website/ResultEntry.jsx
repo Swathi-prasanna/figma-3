@@ -15,12 +15,12 @@ const ResultEntry = () => {
         <form className="results-entry-form">
           <div className="results-entry-row">
             <label>
-              <div className="test">Test Order</div>
+              <div>Test Order</div>
               <input type="text"/>
             </label>
 
             <label>
-              <div className="test">Completion Time</div>
+              <div>Completion Time</div>
               <input type="text" />
             </label>
           </div>
