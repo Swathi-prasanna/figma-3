@@ -513,7 +513,7 @@ height: 120px;
 }
 .test-queue-section {
   width: 100%;
-  margin-top: 0px;
+  margin-top: 100px;
 }
 
 .test-queue-container {
@@ -1489,6 +1489,8 @@ width: 100%
 
 }
 .results-entry-title {
+  display: flex;
+  flex-direction: column;
 margin-bottom: 24px;
 }
 .results-entry-title h1 {
