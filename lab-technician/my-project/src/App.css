@@ -1496,14 +1496,10 @@ margin: 0;
 font-size: 30px;
 font-weight: 700;
 line-height: 36px;
+
 margin: 0;
 font-family: "Google Sans", sans-serif !important;;
 font-weight: 700;
-font-style: Bold;
-font-size: 30px;
-leading-trim: NONE;
-line-height: 36px;
-letter-spacing: -0.75px;
 color: #0F172B;
 }
 .results-entry-title p {
