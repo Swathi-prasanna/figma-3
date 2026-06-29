@@ -61,7 +61,6 @@ function App() {
           <main className="page-content">
             <Routes>
               <Route path="/" element={<Dashboard />} />
-              <Route path="/test-queue" element={<TestQueue />} />
               <Route path="/sample-collection" element={<SampleCollection />} />
               <Route path="/results-entry" element={<ResultEntry />} />
               <Route path="*" element={<Navigate to="/" replace />} />
