@@ -513,7 +513,7 @@ height: 120px;
 }
 .test-queue-section {
   width: 100%;
-  margin-top: 50px;
+  margin-top: 0px;
 }
 
 .test-queue-container {
@@ -1495,7 +1495,6 @@ margin-bottom: 24px;
 margin: 0;
 font-size: 30px;
 font-weight: 700;
-line-height: 36px;
 font-family: "Google Sans", sans-serif !important;;
 font-weight: 700;
 color: #0F172B;
