@@ -513,7 +513,7 @@ height: 120px;
 }
 .test-queue-section {
   width: 100%;
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 .test-queue-container {
@@ -1489,11 +1489,12 @@ width: 100%
 
 }
 .results-entry-title {
-  display: flex;
-  flex-direction: column;
+  
 margin-bottom: 24px;
 }
 .results-entry-title h1 {
+display: flex;
+flex-direction: column;
 margin: 0;
 font-size: 30px;
 font-weight: 700;
@@ -1525,12 +1526,8 @@ color: #45556C;
     0px 1px 3px 0px rgba(0, 0, 0, 0.1);
   padding: 24px;
   width: 100%;}
-.results-entry-card h2 {
-width: 158;
-height: 28;
-angle: 0 deg;
-opacity: 1;
-top: 0.8px;
+.results-entry-card h2{
+  width: 100%;
 font-family: "Google Sans", sans-serif !important;
 font-weight: 600;
 font-style: Semibold;
