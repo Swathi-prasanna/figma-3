@@ -10,7 +10,7 @@ const Invoice=()=>{
         <div className="modal-overlay">
             <div className="modal-content">
                 <div className="modal-content">
-                    <span className="close-btn" onClick={()=> setShowModal(false)}>x</span>
+                    <span className="close-btn1" onClick={()=> setShowModal(false)}>x</span>
                     <h3>New Invoice</h3>
                     <div className="form-group">
                         <label>Patient</label>
